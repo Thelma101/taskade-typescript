@@ -14,4 +14,9 @@ type UserId = stringOrNumber
 let myName = "Tee"
 
 let userName: 'Dave' | 'Rachel' |'John'
-// userName = ''
+userName = 'Rachel'
+
+// Functions
+const add = (a: number, b: number): number => {
+    return a + b
+}
