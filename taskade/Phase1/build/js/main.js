@@ -9,3 +9,27 @@ guitars.unshift('Jim');
 let tests = [];
 let bands = [];
 bands.push('Van Halen');
+// objects
+let myObj;
+myObj = [];
+console.log(typeof myObj);
+myObj = {};
+const exampleObj = {
+    prop1: 'value1',
+    prop2: true,
+};
+exampleObj.prop1 = 'John';
+let evh = {
+    name: 'WIll',
+    active: false,
+    albums: [1928, 5512, 'yezy01']
+};
+let JP = {
+    name: 'JP',
+    active: true,
+    albums: ['yezy01', '1928', 5512]
+};
+evh = JP;
+const greetGuitarist = (guitarist) => {
+    return `Hello $(guitarist.name)!`;
+};
