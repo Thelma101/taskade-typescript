@@ -31,8 +31,18 @@ let JP = {
 };
 evh = JP;
 const greetGuitarist = (guitarist) => {
+    var _a;
     if (guitarist.name) {
-        return `Hello ${guitarist.name.toUpperCase()}!`;
+        return `Hello ${(_a = guitarist.name) === null || _a === void 0 ? void 0 : _a.toUpperCase()}!`;
     }
     return `Doesn't exist!`;
 };
+// enums
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 1] = "U";
+    Grade[Grade["D"] = 2] = "D";
+    Grade[Grade["C"] = 3] = "C";
+    Grade[Grade["B"] = 4] = "B";
+    Grade[Grade["A"] = 5] = "A";
+})(Grade || (Grade = {}));

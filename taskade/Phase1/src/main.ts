@@ -51,7 +51,17 @@ evh = JP
 
 const greetGuitarist = (guitarist: Guitarist) => {
     if (guitarist.name) {
-        return `Hello ${guitarist.name.toUpperCase()}!`;
+        return `Hello ${guitarist.name?.toUpperCase()}!`;
     }
     return `Doesn't exist!`;
 };
+
+// enums
+
+enum Grade {
+    U = 1,
+    D,
+    C,
+    B,
+    A,
+}
