@@ -14,4 +14,4 @@ type UserId = stringOrNumber
 let myName = "Tee"
 
 let userName: 'Dave' | 'Rachel' |'John'
-userName = ''
+// userName = ''
