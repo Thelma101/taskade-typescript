@@ -30,7 +30,7 @@ exampleObj.prop1 = 'John'
 // annotate a type
 
 type Guitarist = {
-    name: string;
+    name?: string;
     active: boolean;
     albums: (string | number)[]
 }
@@ -50,5 +50,8 @@ let JP: Guitarist = {
 evh = JP
 
 const greetGuitarist = (guitarist: Guitarist) => {
-    return `Hello $(guitarist.name)!`
-} 
+    if (guitarist.name) {
+        return `Hello ${guitarist.name.toUpperCase()}!`;
+    }
+    return `Doesn't exist!`;
+};

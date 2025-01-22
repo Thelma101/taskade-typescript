@@ -31,5 +31,8 @@ let JP = {
 };
 evh = JP;
 const greetGuitarist = (guitarist) => {
-    return `Hello $(guitarist.name)!`;
+    if (guitarist.name) {
+        return `Hello ${guitarist.name.toUpperCase()}!`;
+    }
+    return `Doesn't exist!`;
 };
