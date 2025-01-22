@@ -1,15 +1,11 @@
 "use strict";
-let myName;
-let meaningOfLife;
-let isLoading;
-let album;
-myName = "John";
-meaningOfLife = 42;
-isLoading = true;
-album = 14567;
-const sum = (a, b) => {
-    return a + b;
-};
-let postId;
-let isActive;
-let re = /\w+/g;
+let stringArr = ['one', 'two', 'Tee'];
+let guitars = ['strat', 'paolo', 3829];
+let mixedData = ['EVH', 2945, true];
+stringArr[0] = 'John';
+stringArr.push('rock');
+guitars[0] = 1984;
+guitars.unshift('Jim');
+let tests = [];
+let bands = [];
+bands.push('Van Halen');
