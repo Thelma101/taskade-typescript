@@ -26,4 +26,6 @@ const logMsg = (message: any): void => {
 }
 
 logMsg('Hello!')
-logMsg(add(2,39)) 
+logMsg(add(2,39))
+
+
