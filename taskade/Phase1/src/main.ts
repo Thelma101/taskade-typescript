@@ -1,3 +1,5 @@
+import { MatcherFunction } from "@testing-library/react";
+
 type stringOrNumber = string | number
 
 type stringOrNumberArray = (string | number)[]
@@ -32,6 +34,23 @@ let subtract = function (c: number, d: number): number {
     return c - d
 }
 
-let subtracts = (e: number, f: number): number => {
-    return e - f
+type mathFunction = (c: number, d: number) => number
+
+let multiply: mathFunction = function (c, d) {
+    return c * d
 }
+
+logMsg(multiply(2,2))
+
+const addAll = (a: number, b: number, c?: number): number {
+    if (typeof c !== 'undefined') {
+        return a + b + c
+    }
+    return a + b
+}
+
+const total = (...nums: number[]): number => {
+    return nums.reduce((prev, curr) => prev + curr)
+}
+
+logMsg(total(1,2,3,4,5,6,7,8,9,10))
