@@ -4,16 +4,34 @@ type Three = 'hello'
 
 let e = <string | number>'hello2'
 
-const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number |
-    string => {
-        if (c == 'add') return a + b
-        return '' + a + b
+class Coder {
+    name: string 
+    
 }
 
-let myVal: string = addOrConcat(2,2, 'concat') as string
-let nextVal: number = addOrConcat(2,2, 'concat') as number
+class webDev extends Coder {
+    constructor(
+        public computer: string,
+        name: string,
+        music: string,
+        age: number,
+        
 
- 
+    ) {
+        super(name, music, age)
+    }
+}
+
+const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number |
+    string => {
+    if (c == 'add') return a + b
+    return '' + a + b
+}
+
+let myVal: string = addOrConcat(2, 2, 'concat') as string
+let nextVal: number = addOrConcat(2, 2, 'concat') as number
+
+
 
 type stringOrNumber = string | number
 
@@ -69,9 +87,3 @@ const total = (...nums: number[]): number => {
 }
 
 logMsg(total(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) 
-
-
-class Coder {
-    name: string
-    
-}
