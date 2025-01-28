@@ -4,23 +4,24 @@ type Three = 'hello'
 
 let e = <string | number>'hello2'
 
-class Coder {
-    name: string 
-    
+interface Musician {
+    name: string,
+    instrument: string,
+    play(action: string): string
 }
 
-class webDev extends Coder {
-    constructor(
-        public computer: string,
-        name: string,
-        music: string,
-        age: number,
-        
+class Guitarist implements Musician {
+    name: string
+    instrument: string
 
-    ) {
-        super(name, music, age)
+    constructor(name: string, instrument: string) {
+        this.name = name
+        this.instrument = instrument
     }
 }
+
+const Page = new Guitarist('')
+
 
 const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number |
     string => {
