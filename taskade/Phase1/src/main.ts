@@ -20,7 +20,7 @@ class Guitarist implements Musician {
     }
 }
 
-const Page = new Guitarist('')
+const Page = new Guitarist('Jimmy', 'guitar')
 
 
 const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number |
